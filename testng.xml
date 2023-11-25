@@ -1,0 +1,9 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<suite name = "Simple test-ng test-suite">
+
+   <test name = "testng example">
+      <classes>
+         <class name = "com.project.stargile.banking.TestAccountService" />
+      </classes>
+   </test>
+</suite>

@@ -25,8 +25,7 @@ public class AccountController {
 	public String sayHello() {
 		return "Hello from CBS Bank";
 	}
-	
-	
+		
 	@GetMapping("/createAccount")
 	public Account createAccount(){
 		return accountService.createAccount();

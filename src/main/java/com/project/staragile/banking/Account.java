@@ -60,9 +60,4 @@ public class Account {
 		this.accountBalance = accountBalance;
 	}
 	
-	
-	
-	
-	
-	
 }
