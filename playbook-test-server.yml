@@ -1,5 +1,5 @@
 ---
-- hosts: test-server
+- hosts: test-server2
   become: true
   tasks:
   - name: update apt
