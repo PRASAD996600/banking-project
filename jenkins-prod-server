@@ -1,0 +1,8 @@
+node {
+    stage('code checkout') {
+       git 'https://github.com/PRASAD996600/banking-project.git'
+ }
+        stage('configuration & deploy') {
+    ansiblePlaybook become: true, credentialsId: 'ansible-ssh-key', disableHostKeyChecking: true, installation: 'ansible', inventory: '/etc/ansible/hosts', playbook: 'playbook-prod-server.yml', vaultTmpPath: ''
+    }
+}
