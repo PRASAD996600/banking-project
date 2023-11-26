@@ -12,6 +12,7 @@
     command: sudo systemctl start docker
 
   - name: deploy insureme application
+    command: sudo docker rmi -f prasad996600/banking:1.0
     command: sudo docker run -itd -p 8082:8082 --name banking prasad996600/banking:1.0
 
   - name: deploy node-exporter
